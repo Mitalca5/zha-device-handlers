@@ -121,7 +121,7 @@ class XiaomiOpple2ButtonSwitchBase(XiaomiCustomDevice):
     replacement = {
         ENDPOINTS: {
             1: {
-                DEVICE_TYPE: zha.DeviceType.ON_OFF_SWITCH,
+                DEVICE_TYPE: zha.DeviceType.ON_OFF_LIGHT,
                 INPUT_CLUSTERS: [
                     BasicCluster,
                     DeviceTemperatureCluster,  # 2
@@ -137,7 +137,7 @@ class XiaomiOpple2ButtonSwitchBase(XiaomiCustomDevice):
                 OUTPUT_CLUSTERS: [Time.cluster_id, Ota.cluster_id],
             },
             2: {
-                DEVICE_TYPE: zha.DeviceType.ON_OFF_SWITCH,
+                DEVICE_TYPE: zha.DeviceType.ON_OFF_LIGHT,
                 INPUT_CLUSTERS: [
                     BasicCluster,
                     Identify.cluster_id,  # 3
