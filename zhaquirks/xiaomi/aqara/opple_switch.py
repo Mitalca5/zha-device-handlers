@@ -47,7 +47,7 @@ from zhaquirks.xiaomi import (
     XiaomiMeteringCluster,
 )
 
-from .opple_remote import MultistateInputCluster, OppleCluster
+from zhaquirks.xiaomi.aqara.opple_remote import MultistateInputCluster, OppleCluster
 
 BOTH_BUTTONS = "both_buttons"
 PRESS_TYPES = {0: "hold", 1: "single", 2: "double", 3: "triple", 255: "release"}
